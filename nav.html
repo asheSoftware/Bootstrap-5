@@ -96,8 +96,10 @@
 
     <!--bootstrap forms-->
    <form>
-
-    <label for="email" class="from-label">Email Address</label>
+<span class="tt" data-bs-placement="bottom" title="plase enter your email adderess">
+  <label for="email" class="from-label">Email Address</label>
+</span>
+    
     <input type="email" class="form-control" id="email" placeholder="ashenafigmail@.com">
     <label for="name" class="from-label">Name</label>
     <input type="text" class="form-control" id="name" placeholder="please Enter your name">
@@ -125,4 +127,9 @@
 
     </div>
 </body>
+<script>
+
+  const tooltips=document.querySelectorAll('.tt')
+  tooltips.forEach(t=>{new bootstrap.Tooltip(t)})
+</script>
 </html>
